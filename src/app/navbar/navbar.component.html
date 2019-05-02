@@ -1,18 +1,19 @@
 <nav>
   <h2>Logo</h2>
-  <div>
-    <a routerLink='/'>Home</a>
-    <a routerLink='/about'>About</a>
-    <a routerLink='/product'>Products</a>
+  <div class='sideNav'>
+    <h3 routerLink='/'>Home</h3>
+    <h3 routerLink='/about'>About</h3>
+    <h3 routerLink='/product'>Products</h3>
+    <button *ngIf='!token' (click)='loginToggle()' >Login</button>
+    <button *ngIf='token' (click)='logout()' >Logout</button>
   </div>
-  <button (click)='loginToggle()' >Login</button>
 </nav>
 <div class='login' *ngIf='loggedIn'>
   <form (ngSubmit)='login(email.value, password.value)' >
     <label for='email'>Email: </label>
-    <input #email type='text' > <br />
+    <input #email type='text' required> <br />
     <label for='password'>Password: </label>
-    <input #password type='text' >
+    <input #password type='password' required>
     <button type='submit'>Login</button>
   </form>
 </div>

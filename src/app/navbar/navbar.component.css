@@ -1,5 +1,23 @@
 nav {
-    background-color: green;
+    background-color: rgb(126, 175, 126);
     display: flex;
     justify-content: space-between;
+}
+.sideNav{
+    display: flex;
+    align-items: center;
+}
+h3 {
+    color: black;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+a:visited{
+    color: black;
+}
+button{
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 5px;
 }
