@@ -4,13 +4,13 @@
 <hr />
 <div *ngFor='let p of newProducts' class='deck'>
   <!-- Card -->
-  <div class="card mb-2">
+  <div class="card">
     <!-- Content -->
-    <div class="cardContainer align-items-center rgba-black-strong">
+    <div class="cardContainer align-items-center">
       <div>
         <h3 class="card-title pt-2"><strong>{{ p.product_name }}</strong></h3>
         <img src='{{ p.product_image }}' alt='' >
-        <a mdbBtn color="deep-orange" routerLink='/product' >View product</a>
+        <a mdbBtn color="orange" routerLink='/product' >View product</a>
       </div>
     </div>
     <!-- Content -->
