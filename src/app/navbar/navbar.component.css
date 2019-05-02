@@ -6,6 +6,7 @@ nav {
 .sideNav{
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 h3 {
     color: black;
@@ -17,7 +18,16 @@ a:visited{
     color: black;
 }
 button{
-    margin-right: 10px;
     height: 30px;
     border-radius: 5px;
+}
+.login{
+    margin:auto auto;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
