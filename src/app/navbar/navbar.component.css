@@ -1,10 +1,39 @@
 nav {
-    background-color: green;
+    background-color: rgb(126, 175, 126);
     display: flex;
     justify-content: space-between;
 }
 
+
 .icon {
     width: 7em;
     height: 7em;
+
+.sideNav{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+h3 {
+    color: black;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+a:visited{
+    color: black;
+}
+button{
+    height: 30px;
+    border-radius: 5px;
+}
+.login{
+    margin:auto auto;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
