@@ -1,5 +1,7 @@
 footer {
-    background-color: #eeff41;
+    background-color: #0a2a0c !important;
+    display: flex;
+    justify-content: space-between;
    
 }
 
@@ -7,3 +9,15 @@ footer {
     width: 7em;
     height: 7em;
 }
+
+.a {
+    color: #20a128 !important;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding:2px;
+}
+
