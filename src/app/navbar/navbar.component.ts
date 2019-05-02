@@ -8,26 +8,35 @@ import { AdminService } from '../services/admin.service';
 })
 export class NavbarComponent implements OnInit {
   loggedIn: boolean = false;
+  token: any;
 
   constructor(private adminService: AdminService) { }
 
   ngOnInit() {
-    console.log(this.loggedIn);
+    this.token = localStorage.getItem('token');
   }
 
   loginToggle() {
-     this.loggedIn = !this.loggedIn;
-    console.log(this.loggedIn);
+    this.loggedIn = !this.loggedIn;
+  }
+  logout() {
+    localStorage.clear();
+    this.token = '';
+    location.reload();
   }
 
   login(email: string, password: string){
     //console.log(email, password);
     this.adminService.login(email, password).subscribe(
       data => {
-        console.log(data);
+        //console.log(data);
+        let datas: any = data;
+        this.token = datas.token;
+        localStorage.setItem('token', datas.token);
       }
     )
     this.loggedIn = false;
+    location.reload();
   }
 
 }

@@ -1,12 +1,14 @@
-<div *ngIf='product' >
-  <div *ngFor='let p of product' class='deck'>
+<div *ngIf='someProducts' >
+  <div *ngFor='let p of someProducts' class='deck'>
     <div class='card'>
       <div class='cardContainer'>
-        <h4>{{ p.product_name }}</h4>
+        <h3>{{ p.product_name }}</h3>
         <img src='{{ p.product_image }}' alt=''>
         <p>{{ p.product_description }}</p>
         <p>Cost: ${{ p.product_price }}</p>
-        <button>Delete</button>
+        <div *ngIf='token'>
+          <button #button value='{{ p.id }}' (click)='deletePlant(button.value)' >Delete</button>
+        </div>
       </div>
     </div>
   </div>

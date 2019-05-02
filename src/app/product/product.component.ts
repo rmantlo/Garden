@@ -8,6 +8,8 @@ import { ProductService } from '../services/product.service';
 })
 export class ProductComponent implements OnInit {
   product: any;
+  someProducts: any;
+  token: any;
 
   constructor(private productService: ProductService) { }
 
@@ -17,13 +19,28 @@ export class ProductComponent implements OnInit {
         //console.log(data);
         this.product = data;
         this.product.reverse();
-        console.log(this.product);
+        this.someProducts = this.product.slice(0,20);
+        //console.log(this.someProducts);
       }
     )
+  }
+  setToken(){
+    this.token = localStorage.getItem('token');
+    //console.log(this.token)
   }
 
   ngOnInit() {
     this.getProducts();
+    this.setToken();
+  }
+
+  deletePlant(id: number){
+    //console.log(id);
+    this.productService.deleteProducts(id).subscribe(
+      data => {
+        console.log('deleted');
+      }
+    )
   }
 
 }
