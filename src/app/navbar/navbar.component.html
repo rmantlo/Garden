@@ -1,9 +1,18 @@
 <nav>
   <h2>Logo</h2>
   <div>
-
     <a routerLink='/'>Home</a>
     <a routerLink='/about'>About</a>
     <a routerLink='/product'>Products</a>
   </div>
+  <button (click)='loginToggle()' >Login</button>
 </nav>
+<div class='login' *ngIf='loggedIn'>
+  <form (ngSubmit)='login(email.value, password.value)' >
+    <label for='email'>Email: </label>
+    <input #email type='text' > <br />
+    <label for='password'>Password: </label>
+    <input #password type='text' >
+    <button type='submit'>Login</button>
+  </form>
+</div>
