@@ -1,5 +1,10 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
+const httpOptions = {headers: new HttpHeaders({
+  'Content-Type':'application/json',
+  'Authorization': "something"
+})}
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +16,9 @@ export class ProductService {
 
   getProducts() {
     return this.http.get(this.url);
+  }
+  deleteProducts(id: number){
+    return this.http.delete(`${this.url}/${id}`, httpOptions);
   }
 
 }

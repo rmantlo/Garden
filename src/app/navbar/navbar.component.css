@@ -3,3 +3,8 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
+.icon {
+    width: 7em;
+    height: 7em;
+}
