@@ -4,21 +4,24 @@ h1 {
 
 p {
     text-align: center;
+    padding: 10pt;
+    font-size: 16pt;
 }
 
 li {
     text-align: center;
     list-style-position: inside;
+    font-size: 16pt;
 }
 
 img {
-
-    padding-left: 10pt;
-    padding-right: 5pt;
+    padding: 10pt;
+    /* padding-left: 10pt;
+    padding-right: 5pt; */
    
 }
 
 iframe {
-    padding-right: 20pt;
-    padding-left: 20pt;
+    /* padding-right: 20pt;
+    padding-left: 20pt; */
 }
