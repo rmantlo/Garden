@@ -1,3 +1,32 @@
-/* .pic {
-    background-color: blueviolet;
-} */
+.pic{
+    margin-bottom: 50px;
+}
+.pic img{
+    width: 80vw;
+    min-width: 350px;
+}
+.card img {
+    width:10vw;
+    min-width: 200px;
+}
+.deck {
+    display: inline-block;
+    vertical-align: top;
+    margin-top:5px;
+    margin-bottom: 50px;
+}
+.card{
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 15vw;
+    margin: 10px;
+    min-width: 300px;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 0.5em 0.5em 2em rgba( 0, 0, 0, 0.2);
+}
+.cardContainer{
+    padding: 1em 2em;
+    color: white;
+}
