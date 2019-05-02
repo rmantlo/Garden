@@ -38,6 +38,10 @@ a:visited{
 button{
     height: 30px;
     border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5px;
+    background-color:#20A128;
+    border-color:#20A128;
 }
 .login{
     margin:auto auto;

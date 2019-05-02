@@ -4,7 +4,9 @@ footer {
     justify-content: space-between;
    
 }
-
+.page-footer{
+    padding-top: 0;
+}
 .icon {
     width: 7em;
     height: 7em;
@@ -19,5 +21,9 @@ footer {
     align-items: center;
     margin-right: 10px;
     padding:2px;
+}
+.links h3{
+    margin-right: 10px;
+    margin-bottom: 0;
 }
 

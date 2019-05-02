@@ -1,10 +1,14 @@
+.container{
+    padding-bottom: 50px;
+}
 .deck {
     display: inline-block;
     vertical-align: top;
     margin-top:5px;
 }
 .card{
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.4);
+    background-color: rgb(78, 158, 83);
     transition: 0.3s;
     width: 20vw;
     margin: 10px;
@@ -12,7 +16,7 @@
     text-align: center;
 }
 .card:hover{
-    box-shadow: 0.5em 0.5em 2em rgba( 0, 0, 0, 0.2);
+    box-shadow: 1em 1em 1em rgba( 0, 0, 0, 0.4);
 }
 .cardContainer{
     padding: 1em 2em;
