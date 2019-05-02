@@ -39,6 +39,7 @@ export class ProductComponent implements OnInit {
     this.productService.deleteProducts(id).subscribe(
       data => {
         console.log('deleted');
+        this.getProducts();
       }
     )
   }
