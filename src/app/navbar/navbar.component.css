@@ -19,7 +19,9 @@ nav {
 h3 {
     color: #20A128;
     margin-right: 10px;
+    font-family: "Roboto", sans-serif;
     font-size: 2vw;
+    font-weight: 300;
     cursor: pointer;
     outline: none;
 }

@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
       data => {
         this.product = data;
         this.newProducts = this.product.reverse().slice(0,3);
-        console.log(this.newProducts);
+        //console.log(this.newProducts);
       }
     )
   }
