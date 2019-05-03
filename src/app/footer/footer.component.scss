@@ -1,0 +1,32 @@
+footer {
+    background-color: #0a2a0c !important;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.page-footer{
+    padding-top: 0;
+}
+.icon {
+    width: 7em;
+    height: 7em;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding:2px;
+}
+.links h3{
+    margin-right: 10px;
+    margin-bottom: 0;
+    color: #20A128;
+    margin-right: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+    cursor: pointer;
+    outline: none;
+}
+

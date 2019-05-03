@@ -1,3 +1,29 @@
+<div class="pic">
+  <img src="../../assets/HomeIcon.png" alt="plant logo">
+</div>
+<hr />
+<h3>Landscape Design</h3>
 <p>
-  home works!
+  Since 1425, Bloomers has been serving central Indiana by providing Hoosiers with quality products and
+  expert advice with a culture of customer service. Bloomers seeks to be the premier one-stop-shop for our clients, as
+  we provide experienced landscape design and
+  installation services, as well as routine landscape maintenance to ensure your lawn is always the envy of the
+  neighborhood.
 </p>
+<hr />
+<div *ngFor='let p of newProducts' class='deck'>
+  <!-- Card -->
+  <div class="card">
+    <!-- Content -->
+    <div class="cardContainer align-items-center">
+      <div>
+        <h3 class="card-title pt-2"><strong>{{ p.product_name }}</strong></h3>
+        <img src='{{ p.product_image }}' alt=''>
+        <a mdbBtn color="orange" routerLink='/product'>View product</a>
+      </div>
+    </div>
+    <!-- Content -->
+  </div>
+  <!-- Card -->
+
+</div>

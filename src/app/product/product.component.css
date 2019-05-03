@@ -1,0 +1,33 @@
+.container{
+    padding-bottom: 50px;
+}
+.deck {
+    display: inline-block;
+    vertical-align: top;
+    margin-top:5px;
+}
+.card{
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.4);
+    background-color: rgb(78, 158, 83);
+    transition: 0.3s;
+    width: 20vw;
+    margin: 10px;
+    min-width: 300px;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 1em 1em 1em rgba( 0, 0, 0, 0.4);
+}
+.cardContainer{
+    padding: 1em 2em;
+}
+img{
+    width: 15vw;
+    min-width: 100px;
+} 
+button{
+    background-color: rgb(177, 2, 2);
+    color: white;
+    border-color: rgb(177, 2, 2);
+    border-radius: 5px;
+}
