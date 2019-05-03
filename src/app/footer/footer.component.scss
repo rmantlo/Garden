@@ -12,10 +12,6 @@ footer {
     height: 7em;
 }
 
-.a {
-    color: #20a128 !important;
-}
-
 .links {
     display: flex;
     align-items: center;
@@ -25,5 +21,12 @@ footer {
 .links h3{
     margin-right: 10px;
     margin-bottom: 0;
+    color: #20A128;
+    margin-right: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+    cursor: pointer;
+    outline: none;
 }
 

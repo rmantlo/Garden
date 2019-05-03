@@ -31,3 +31,9 @@
     padding: 1em 2em;
     color: #0A2A0C;
 }
+p{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-family: 'Quattrocento', serif;
+    font-size: 14pt;
+}
