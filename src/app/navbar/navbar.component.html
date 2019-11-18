@@ -4,7 +4,7 @@
     <h3 routerLink='/'>Home</h3>
     <h3 routerLink='/about'>About</h3>
     <h3 routerLink='/product'>Products</h3>
-    <button *ngIf='!token' (click)='loginToggle()' >Login</button>
+    <button *ngIf='!token' (click)='loginToggle()' >Admin</button>
     <button *ngIf='token' (click)='logout()' >Logout</button>
   </div>
 </nav>
